@@ -7,3 +7,5 @@ But after going through some blog posts I came up with a solution which didn't w
 Then after few days,when my intelligent friend Muslih(https://github.com/muslih-DIY) is free we discussed(I asked) and as always he suggested a solution(guy is a freaking genius).
 
 I tried the same in the evening and it worked.
+
+my part-1 solution is readable but it violates DRY and is freaking long so after going through part-1 solution of Muslih refactored the solution
