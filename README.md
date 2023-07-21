@@ -1,6 +1,6 @@
-# Day-1 Taaxicab Geometry
+# Day-1 Taxicab Geometry
 
-I have no idea what taxicab geometry,Manhattan distance,Non Euclidean geometry or whatever you call this concept.
+I have no idea what Taxicab geometry,Manhattan distance,Non-Euclidean geometry or whatever you call this concept.
 
 But after going through some blog posts I came up with a solution which didn't work because I completely ignored directions.
 
