@@ -61,10 +61,7 @@ fs.readFile(filePath,'utf8',(err,data) => {
     
     console.log(`part1: ${part1()}`);
     console.log(`part2: ${part2()}`);
-    
-        
-  
-    });
+});
 
 
 
