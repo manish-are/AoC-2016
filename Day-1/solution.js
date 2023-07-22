@@ -18,21 +18,25 @@ fs.readFile(filePath,'utf8',(err,data) => {
                     'W': {'L': ['S', [0, -1]], 'R': ['N', [0, 1]] } }; 
 
     let startingPosition = [0, 0];
+    
+    
 
     let currentDirection = 'N';
-    let currentPoint = [0, 0];
+    let currentPosition = [0, 0];
 
     for (let instr of instrs){
-        let nextDirection = rules[currentDirection][instr[0]][0];
-        let nextDirectionCoordinates = rules[currentDirection][instr[0]][1];
-        let blocks = instr.slice(1);
 
+        let [movement, blocks] = [instr[0], parseInt(instr.slice(1))];
 
-        currentPoint[0] = currentPoint[0] + parseInt(blocks) * nextDirectionCoordinates[0];
-        currentPoint[1] = currentPoint[1] + parseInt(blocks) * nextDirectionCoordinates[1];
+        let nextDirection = rules[currentDirection][movement][0];
+        let nextDirectionCoordinates = rules[currentDirection][movement][1];
+        
+        //change currentDirection and currentPosition according to rules
+        currentPosition[0] = currentPosition[0] + blocks * nextDirectionCoordinates[0];
+        currentPosition[1] = currentPosition[1] + blocks * nextDirectionCoordinates[1];
         currentDirection = nextDirection;
         }
-        console.log(Math.abs(currentPoint[0] - startingPosition[0]) + Math.abs(currentPoint[1] - startingPosition[1]));
+        console.log(Math.abs(currentPosition[0] - startingPosition[0]) + Math.abs(currentPosition[1] - startingPosition[1]));
   
     });
 
