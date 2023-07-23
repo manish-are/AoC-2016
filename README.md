@@ -18,5 +18,5 @@ so to store (x, y) coordinates in set we have to stringify them and we have to d
 
 # Day-2
 
-part-1 i find it very simple we have to maintain rules and move accordingly but once i solve part-1 part-2 keypad is pretty differnt then we have to change ruules but i thought, is there any other way to solve so i though lets check `r/adventofcode`
+part-1, I find it very simple we have to maintain rules and move accordingly but once i solve part-1, part-2 keypad is pretty different then we have to change rules but I thought, is there any other way to solve so i though lets check `r/adventofcode`
 
